@@ -7,3 +7,5 @@ const toggleScreen = () => {
 };
 
 menuBtn.addEventListener("click",toggleScreen)
+backBtn.addEventListener("click",toggleScreen)
+

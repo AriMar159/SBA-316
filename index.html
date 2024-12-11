@@ -7,58 +7,80 @@
     <title>Bloom Glow Up App</title>
 </head>
 <body>
-<div class="wrapper">
-   <div class="screen-backdrop"></div>
-   <div class="screen home-screen">
-    <div class="head-wrapper">
-        <div class="menu-btn">
-        </div>
-        <div class="welcome">
-        <div class="content">
-        </div>
-        <div class="img">
-        <div class="backdrop"></div>
-        <img src="images/bloom logo.png" alt="">
-        </div>
-    </div>
-</div>
-           
-        
-        <div class="menu-btn">
-        </div>
-        <!--categories-->
-        <div class="categories-wrapper">
-            <div class="categories">
-                <div class="category">
-                    <div class="left">
+    <div class="wrapper show-category">
+        <!-- Screen Backdrop -->
+        <div class="screen-backdrop"></div>
+
+        <!-- Home Screen -->
+        <div class="screen home-screen">
+            <div class="head-wrapper">
+                <!-- Menu Button -->
+                <div class="menu-btn"></div>
+
+                <!-- Welcome Section -->
+                <div class="welcome">
+                    <div class="content">
+                        <h1>Hello Beautiful🌸</h1>
+                        <p>Today we have 10 goals</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/bloomingflower.gif" alt="Blooming flower">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-wrapper">
+                <div class="categories">
+                    <div class="category">
+                        <div class="left">
+                            <div class="content">
+                                <h1>Glow Up</h1>
+                                <p>5 tasks</p>
+                            </div>
                         </div>
                         <div class="options">
-                            <div class="toggle-btn">
-                        <div class="menu-btn">
-             
-                        <div class="content">
-                            <h1>Glow Up</h1>
-                            <p> 5 tasks </p>
-                        </div> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-
-    <div class="welcome">
-        <div class ="content">
-            <h1>Hello Beautiful🌸</h1>
-            <p>Today we have 10 goals</p>
+                            <div class="toggle-btn"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img">
-            <div class="backdrop"></div>
-            <img src="images/bloomingflower.gif" alt="bloomingflower">
-         </div>
-       </div>
+        </div>
+
+        <!-- Category Screen -->
+        <div class="screen category-screen">
+            <div class="head-wrapper">
+                <!-- Back Button -->
+                <div class="back-btn"></div>
+
+                <!-- Category Details -->
+                <div class="category-details">
+                    <img src="images/sparkle.gif" alt="Category Image" id="category-img">
+                    <div class="details">
+                        <h1>Personal</h1>
+                        <p>8 tasks</p>
+                    </div>
+                </div>
+
+                <!-- Task Wrapper -->
+                <div class="task-wrapper">
+                    <div class="task">
+                        <label for="task" class="task">
+                            <input type="checkbox" id="task">
+                            <span class="checkmark">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <p>Buy a new car</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="screen category-">category</div>
-  </div>
-    <script>src="script.js"</script>  
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
