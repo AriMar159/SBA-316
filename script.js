@@ -22,14 +22,18 @@ listContainer.addEventListener("click", function(e){
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
-    }
+    } saveData();
 
 }, false);
 
 function saveData(){
     localStorage.setItem("data",listContainer.innerHTML);
 }
-loadData();
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask()
+
 
 const toggleButton = document.querySelector('.checklist-toggle');
 const checklist = document.querySelector('.checklist');

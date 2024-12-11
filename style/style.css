@@ -317,18 +317,10 @@ ul li span:hover{
 .task-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
 }
 
-.tasks {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: 500%;
-    width: max-content;
-    cursor: pointer;
-}
+
 
 .task input {
     display: none ;
@@ -382,4 +374,33 @@ ul li span:hover{
     visibility: hidden;
 }
 
-.task-wrapper: .delete 
+.dropdow-checklist {
+    position: relative;
+    display: inline-block;
+}
+.checklist-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.checklist {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    width: 200px;
+}
+.checklist li {
+    margin: 10px 0;
+}
