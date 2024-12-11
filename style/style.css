@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #2e2e2e;
-    font-family: "Sofia",
+    font-family: "Sofia";
     background-color: #fff;
 }
 
@@ -317,7 +317,7 @@ ul li span:hover{
 .task-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:cen;
 }
 
 
@@ -379,10 +379,10 @@ ul li span:hover{
     display: inline-block;
 }
 .checklist-toggle {
-    padding: 10px 20px;
+    padding: 20px 60px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #2e2e2e;
+    background-color: #a00cb1;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -397,10 +397,11 @@ ul li span:hover{
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
-    padding: 10px;
+    padding: 120px;
     list-style: none;
     width: 200px;
 }
 .checklist li {
     margin: 10px 0;
+    ;
 }
