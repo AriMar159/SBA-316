@@ -30,3 +30,10 @@ function saveData(){
     localStorage.setItem("data",listContainer.innerHTML);
 }
 loadData();
+
+const toggleButton = document.querySelector('.checklist-toggle');
+const checklist = document.querySelector('.checklist');
+
+toggleButton.addEventListener('click', () => {
+    checklist.style.display = checklist.style.display === 'block' ? "none" : "block";
+})

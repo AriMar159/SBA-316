@@ -14,61 +14,55 @@
                 <input type="text" id="input-box" placeholder="Add your text">
                 <button onclick="addTask()">Add</button>
             </div>
-            <ul id="list-container">
-                <!--<li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-                <li>Task 4</li> -->
-            </ul>
         </div>
-    </div>
-    <div class="wrapper show-category">
-        <!-- Screen Backdrop -->
-        <div class="screen-backdrop"></div>
-
-        <!-- Home Screen -->
+            <ul id="list-container"></ul>
+    <div class="wrapper">
+      <div class="screen-backdrop"></div>
         <div class="screen home-screen">
-            <div class="head-wrapper">
-                <!-- Menu Button -->
-                <div class="menu-btn"></div>
-
-                <!-- Welcome Section -->
-                <div class="welcome">
-                    <div class="content">
-                        <h1>Hello Beautiful🌸</h1>
-                        <p>Today we have 10 goals</p>
+         <div class="head-wrapper">
+          <div class="welcome">
+            <div class="content">
+                <h1>Hello Beautiful🌸</h1>
+                    <p>Today we have 10 goals<span id="total-goals">0</span></p>
                     </div>
                     <div class="img">
-                        <img src="images/bloomingflower.gif" alt="Blooming flower">
-                    </div>
+                    <img src="images/bloomingflower.gif" alt="Blooming flower">
+                  </div>
                 </div>
             </div>
 
-            <!-- Categories Section -->
             <div class="categories-wrapper">
-                <div class="categories">
-                    <div class="category">
-                        <div class="left">
-                            <div class="content">
-                                <h1>Glow Up</h1>
-                                <p>5 tasks</p>
+             <div class="categories">
+                <div class="category">
+                  <div class="left">
+                    <div class="dropdown-checklist">
+                        <button class ="checklist-toogle">Glow Up</button>
+                            <ul class="checklist">
+                                <li><label><input type="checkbox"></label>Whiten Teeth 🦷</li>
+                                <li><label><input type="checkbox"></label>Manicure 💅🏽</li>
+                                <li><label><input type="checkbox"></label>Skincare Routine🫧 </li>
+                                <li><label><input type="checkbox"></label>Drink Water💦</li>
+                                <li><label><input type="checkbox"></label>Workout 🏋🏽‍♀️</li>
+                            </ul>
+                        </div>
+                            <p><span id="glow-up-tasks"></span>tasks</p>
                             </div>
                         </div>
-                        <div class="options">
-                            <div class="toggle-btn"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Category Screen -->
+                      </div>
+                   </div>
+                 </div>
+               </div>
         <div class="screen category-screen">
             <div class="head-wrapper">
-                <!-- Back Button -->
                 <div class="back-btn"></div>
-
-                <!-- Category Details -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </div>
+        </div>
+            
+    
                 <div class="category-details">
                     <img src="images/sparkle.gif" alt="Category Image" id="category-img">
                     <div class="details">
@@ -83,8 +77,7 @@
                         <label for="task" class="task">
                             <input type="checkbox" id="task">
                             <span class="checkmark">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" stroke-linecap="round" stroke-linejoin="round" />
+                               
                                 </svg>
                             </span>
                             <p>Buy a new car</p>
