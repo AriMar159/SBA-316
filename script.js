@@ -1,10 +1,9 @@
-import "./styles.css";
+const wrapper = document.querySelector(".wrapper");
+const backBtn = document.querySelector(".wrapper");
+const menuBtn = document.querySelector(".menu-btn");
 
-const codeEl = document.querySelector("code");
-console.log(codeEl);
+const toggleScreen = () => {
+    wrapper.classList.toggle("show-category");
+};
 
-const app = document.querySelector("#app");
-console.log(app);
-
-const firstSelect = document.querySelector("input[type=checkbox]");
-console.log(firstSelect);
+menuBtn.addEventListener("click",toggleScreen)
