@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',;
+    font-family:Open Sans;
     box-sizing: border-box;
 }
 
@@ -34,20 +34,22 @@ body {
     
 }
 .todo-container img{
-    display: relative;
+    display: absolute;
     width: 150px;
-    margin-right:-250px;
-    margin-top: 80px;
+    margin-right:250%;
+    margin-top:30%;
 
 }
 .row{
-    display: flex;
+   display: flex;
    align-items: center;
    justify-content: space-between; 
    background:#e5e7fd;
    border-radius:30px;
    padding-left: 20px;
-   margin-top: 30%;
+   margin-top: 85%;
+   margin-left:-35px;
+   position:absolute;
 }
 input{
     flex: 1;
@@ -64,8 +66,8 @@ button{
     background: #a00cb1;
     color: #111010;
     font-size: 16px;
-    cursor: pointer;
-    border: radius 40px; ;
+    cursor: e-resize;
+    border: radius 40px;
 
 }
 ul li{
@@ -156,25 +158,30 @@ ul li span:hover{
 .menu-btn {
     width: 2rem;
     cursor: pointer;
-    color: #ffffff;
+    color:#fff;
 }
 
 .welcome {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .welcome h1 {
-    font-size: 1.5rem;
-    color: #111010;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 160px;
+    margin-left: 65px;
     
 }
 
 .welcome p {
     font-weight: 500;
-    color: #111010;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 .welcome .img {
@@ -183,7 +190,7 @@ ul li span:hover{
 }
 
 .welcome .img .backdrop {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -370,11 +377,11 @@ ul li span:hover{
 }
 
 .dropdow-checklist {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+
 }
 .checklist-toggle {
-    padding: 20px 60px;
+    padding: 20px 80px;
     font-size: 16px;
     cursor: pointer;
     background-color: #a00cb1;
@@ -394,7 +401,7 @@ ul li span:hover{
     margin: 0;
     padding: 120px;
     list-style: none;
-    width: 200px;
+    width: 20px;
 }
 .checklist li {
     margin: 10px 0;
