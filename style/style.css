@@ -31,9 +31,9 @@ body {
     color: #070707;
     display: flex;
     align-items: center;
-    margin-top:20%;
+    margin-top:200px;
     margin-left:-10px;
-    z-index: index 2;
+
     /*Welcome to*/
 }
 .todo-app img{
@@ -172,20 +172,22 @@ ul li span:hover{
     color: #ffffff;
 }
 
-.welcome {
+.hello-msg {
     display: absolute;
-    margin-top:-300px;
+    margin-top:300px;
     color: #ffffff;
-    margin-left: -1%;
-    font-size: small;
-    z-index: 2;
+    margin-left: 15%;
+    font-size: larger;
     /*Hello Beautiful*/
 }
 
-.welcome h1 {
-    position: relative;
-    font-size: 1.5rem;
-    margin-top: 110%;
+.goals {
+    display: absolute;
+    margin-top:10px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    margin-left: 15%;
+    font-size: small;
 }
 
 .welcome p {
@@ -417,13 +419,19 @@ ul li span:hover{
     margin: 10px 0;
     ;
 }
-.gif-image img {
+/*.gif-image img {
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -25%;
+    margin-top: -25%;/*
     
 
-  } /* flower gif
+  } /* flower gif*/
+  .header{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-top: -45%;
+  }
