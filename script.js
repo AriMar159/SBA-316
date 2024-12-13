@@ -1,6 +1,5 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-
 function addTask(){
     if(inputBox.value ===''){
         alert("You must write something!");
@@ -33,7 +32,7 @@ function saveData(){
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
-showTask()
+
 
 
 const toggleButton = document.querySelector('.checklist-toggle');

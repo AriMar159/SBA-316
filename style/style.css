@@ -37,6 +37,10 @@ body {
 
     /*Welcome to*/
 }
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
 
 .row{
    display: flex;
@@ -45,8 +49,8 @@ body {
    background:#e5e7fd;
    border-radius:30px;
    padding-left: 20px;
-   margin-bottom: 25px;
-}
+   margin-top:20px;
+} /*task input field*/
 input{
     flex: 1;
     border: none;
@@ -59,10 +63,12 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #d44ee2;
-    color: #111010;
+    background: #550d5d;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
+    margin-left: -8px;
+    border-radius: 50px;
 
 }
 ul li{
@@ -75,7 +81,7 @@ ul li{
 }
 ul li ::before{
     content:'';
-    position: absolute;
+    position: relative;
     height: 28px;
     width: 28px;
     border-radius: 50%;
@@ -92,6 +98,7 @@ ul li.checked {
 ul li.checked::before{
     background-image: url(images/checked.png);
 }
+
 ul li span{
     position: absolute;
     right: 0;
@@ -144,16 +151,18 @@ ul li span:hover{
 
 
 .screen-backdrop {
-    width: 200%;
-    height: 50rem;
+    width: 30rem;
+    height: 30rem;
     position: absolute;
-    margin-top: 60%;
+    margin-top: 270px;
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
-    border-radius: 50 50 0 0;
+    border-radius: 80px;
     background-color: #cb6ce6; 
     transition: all 0.3s;
+    
+    
     
     /*purple background*/
 }
@@ -172,7 +181,7 @@ ul li span:hover{
     display: relative;
     margin-top:-20%;
     color: #ffffff;
-    margin-left: 18%;
+    margin-left: 20%;
     font-size: small;
     /*Hello Beautiful*/
 }
@@ -182,7 +191,7 @@ ul li span:hover{
     top:10px;
     margin-bottom: 21px;
     color: #ffffff;
-    margin-left:7%;
+    margin-left:-9%;
     font-size: small;
 }
 
@@ -384,17 +393,20 @@ ul li span:hover{
 }
 
 .dropdow-checklist {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    display: flex;
+    
 }
 .checklist-toggle {
-    padding: 20px 60px;
+    padding: 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: #a00cb1;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 15px;
     
 }
 .checklist {
@@ -407,9 +419,10 @@ ul li span:hover{
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
-    padding: 120px;
+    padding: -80px;
     list-style: none;
     width: 200px;
+    
 }
 .checklist li {
     margin: 10px 0;
@@ -421,7 +434,7 @@ ul li span:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -25%;
+    margin-top: -15%;
     margin-left: 23%;
 
   } /* flower gif*/
